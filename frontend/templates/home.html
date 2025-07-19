@@ -1,0 +1,47 @@
+<style>
+    nav{
+        border: 3px solid #ffc107;
+         background-color: black;
+
+         color:white;
+         padding: 15px;
+         font-family: 'Arial Black', sans-serif;
+}
+
+h1{
+
+    margin-left: 30px;
+}
+ul,h1,li{ display: inline;
+    
+}
+ul{
+    margin-left: 26%;
+
+}
+li{
+    color: gray;
+    cursor: pointer;
+}
+li:hover{
+    color:yellow;
+} </style>
+<nav>
+    <h1>Fitness Studio</h1>
+    <ul>
+        <li><a href="/home/gym/">Home |</a></li>
+        <li><a href="/home/fitness/">Fitness Class |</a></li>
+        <li><a href="/strength/strengthbooking/">Strength Booking|</a></li>
+        <li><a href="/home/yogaclientlist/">YogaBooking|</a></li>
+        <li><a href="/booking/cardiotablelist/">CardioBooking|</a></li>
+
+
+    </ul>
+    
+    </nav>
+
+    <div>
+<!--dynamic content-->
+{% block content %}    
+
+{% endblock %}

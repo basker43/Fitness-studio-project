@@ -1,0 +1,113 @@
+{% extends 'home.html' %}
+{% block content %}
+    {% load static %}
+    <style>
+       
+        p{
+        
+            cursor: pointer;
+            
+
+        }
+        
+.box{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    margin-right: 20px;
+
+    
+}
+.product{
+    text-align: center;
+    padding: 40px;
+    margin-right: 40px;
+    
+}
+.box{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+
+    
+}
+.product{
+    text-align: center;
+    padding: 18px;
+}
+h2{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+
+}
+h2:hover{
+    color:yellow;
+}
+.blank{
+    background-color: black;
+    padding-bottom: 50px;
+    
+    
+
+
+}
+.p{
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+}
+
+
+
+.white{
+    color:white;
+    display: inline-block;
+   margin-left: 20%;
+    
+    
+
+}
+
+
+    </style>
+   <div class="product">
+            <div class="box">
+               <img src="{% static 'images/strength.jpg'%}  "width="200"height="250">
+                <p><strong>Strength Training Classes</strong></p>
+                
+                <h2 ><a href="/strength/bookingss/">Booking Now</a></h2>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/yoga.jfif'%}  "width="200"height="250">
+                <p> <strong>Yoga Classes</strong></p>
+                <h2 ><a href="/home/yogaclients">Booking Now</a></h2>
+            </div>    
+            <div class="box">
+                <img src="{% static 'images/cardio.jpg'%}  "width="200"height="250" >             
+                <p><strong>Cardio Classes</strong></p>
+                <h2><a href="/booking/cardiopage/">Booking now</a></h2>
+
+            </div>    
+                   
+            
+        </div>
+        <div class="blank">
+            Enroll Today
+            <h1 class="white"> Enroll Today & Strat Your Power Journey!</h1>
+           <div class="p"> <p>Special Offer!</p>
+            <p>Join Now</p>
+            <p>contact: 6382018315</p></div>
+
+
+        </div>
+ 
+
+</body>
+</html>
+
+
+{% endblock %}
